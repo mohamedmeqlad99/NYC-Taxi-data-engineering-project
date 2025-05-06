@@ -1,0 +1,9 @@
+CREATE DATABASE nyc_taxi_ldw
+GO
+USE nyc_taxi_ldw
+GO
+CREATE SCHEMA Bronze
+GO
+CREATE SCHEMA Silver
+GO
+CREATE SCHEMA Gold
