@@ -1,0 +1,13 @@
+USE nyc_taxi_ldw
+CREATE EXTERNAL FILE FORMAT csv_file_format
+WITH (
+    FORMAT_TYPE = DELIMITEDTEXT,
+    FORMAT_OPTIONS  (
+      FIELD_TERMINATOR = ','
+    , STRING_DELIMITER = '"'
+    , FIRST_ROW = 2 
+    , USE_TYPE_DEFAULT =  FALSE 
+    , ENCODING = 'UTF8'
+    , PARSER_VERSION = '2.0' 
+    )
+)
